@@ -76,8 +76,8 @@ This generates /var/lib/GeoIP/GeoLite2-Country.mmdb, which is used to determine 
 
 ---
 ## 🔗 Useful Links
-[HAProxy Documentation](https://www.haproxy.org/documentation/)
-[GeoIP2 Python Library](https://pypi.org/project/geoip2/)
+[HAProxy Documentation](https://www.haproxy.org/documentation/)  
+[GeoIP2 Python Library](https://pypi.org/project/geoip2/)  
 [IPLists](https://iplists.firehol.org/)
 
 ---

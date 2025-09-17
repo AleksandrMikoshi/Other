@@ -77,8 +77,8 @@ sudo geoipupdate
 
 ---
 ## 🔗 Полезные ссылки
-[Документация HAProxy](https://www.haproxy.org/documentation/)
-[GeoIP2 Python Library](https://pypi.org/project/geoip2/)
+[Документация HAProxy](https://www.haproxy.org/documentation/)  
+[GeoIP2 Python Library](https://pypi.org/project/geoip2/)  
 [IPLists](https://iplists.firehol.org/)
 
 ---
