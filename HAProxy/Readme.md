@@ -1,5 +1,7 @@
 # 🛡️ HAProxy VPN Gateway
 
+[Русский язык](https://github.com/AleksandrMikoshi/Other/blob/main/HAProxy/Readme_ru.md)
+
 ## 📚 Resources Used
 - [HAProxy](https://www.haproxy.org/) version 3.2.4
 - IP Whitelist: [MaxMind GeoIP](https://www.maxmind.com/en/home)
@@ -16,8 +18,7 @@ However, it was necessary to additionally implement a blacklist of IPs that are 
 - **Whitelist** — generated using MaxMind GeoIP.
 - **Blacklist** — generated using IPLists.
 
-Lists are updated using the script:  
-update-haproxy-lists.sh — downloads and refreshes both the whitelist and blacklist.  
+Lists are updated using the script - [`update-haproxy-lists.sh`](https://github.com/AleksandrMikoshi/Other/blob/main/HAProxy/Files/update-haproxy-lists.sh) — downloads and refreshes both the whitelist and blacklist.  
 
 ---
 ## 🏗️ HAProxy Architecture in Front of VPN
@@ -43,7 +44,7 @@ tcp-request connection reject if !whitelist
 ---
 ## 📈 Monitoring Active Connections
 
-A script has been developed to collect statistics - active-ips-dashboard.py  
+A script has been developed to collect statistics - [`active-ips-dashboard.py`](https://github.com/AleksandrMikoshi/Other/blob/main/HAProxy/Files/active_ips_dashboard.py)  
 
 ### 🌐 GeoIP Setup
 
@@ -52,7 +53,7 @@ To enable monitoring, install and configure geoipupdate:
 sudo apt install geoipupdate
 ```
 
-Configure the file /etc/GeoIP.conf (example) and run:
+Configure the file /etc/GeoIP.conf ([`example`](https://github.com/AleksandrMikoshi/Other/blob/main/HAProxy/Files/GeoIP.conf)) and run:
 ```bash
 sudo geoipupdate
 ```

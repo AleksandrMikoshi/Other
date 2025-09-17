@@ -17,8 +17,7 @@
 - **Белый список** — формируется с помощью MaxMind GeoIP.  
 - **Черный список** — формируется через IPLists.  
 
-Для обновления списков используется скрипт:  
-[`update-haproxy-lists.sh`]() — скачивает и обновляет черные и белые списки.
+Для обновления списков используется скрипт - [`update-haproxy-lists.sh`](https://github.com/AleksandrMikoshi/Other/blob/main/HAProxy/Files/update-haproxy-lists.sh) — скачивает и обновляет черные и белые списки.
 
 ---
 ## 🏗️ Архитектура HAProxy перед VPN
@@ -43,7 +42,7 @@ tcp-request connection reject if !whitelist
 ---
 ## 📈 Мониторинг активных подключений
 
-Для сбора статистики разработан скрипт - [active-ips-dashboard.py]()  
+Для сбора статистики разработан скрипт - [`active-ips-dashboard.py`](https://github.com/AleksandrMikoshi/Other/blob/main/HAProxy/Files/active_ips_dashboard.py)  
 
 ### 🌐 Настройка GeoIP
 
@@ -53,7 +52,7 @@ tcp-request connection reject if !whitelist
 sudo apt install geoipupdate
 ```
 
-Настроить файл /etc/GeoIP.conf ([пример]()) и выполнить:
+Настроить файл /etc/GeoIP.conf ([`пример`](https://github.com/AleksandrMikoshi/Other/blob/main/HAProxy/Files/GeoIP.conf)) и выполнить:
 
 ```bash
 sudo geoipupdate
