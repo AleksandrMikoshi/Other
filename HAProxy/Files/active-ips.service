@@ -1,0 +1,12 @@
+[Unit]
+Description=HAProxy Active IP Dashboard Generator
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/active_ips_dashboard.py
+Restart=always
+User=haproxy
+Group=haproxy
+
+[Install]
+WantedBy=multi-user.target

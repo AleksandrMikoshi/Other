@@ -1,0 +1,30 @@
+<html>
+<head><title>Connection statistics</title>
+<meta http-equiv='refresh' content='300'>
+<style>
+body { font-family: Arial; }
+table { border-collapse: collapse; margin-top: 10px; margin-bottom: 20px; }
+th, td { border: 1px solid #333; padding: 6px 10px; text-align: center; }
+th { background: #eee; }
+.low { background-color: #d4edda; }
+.medium { background-color: #fff3cd; }
+.high { background-color: #f8d7da; }
+.blocked { background-color: #f5c6cb; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Connection statistics</h1>
+
+<h2>Allowed active connections</h2>
+<table id="allowed">
+<tr><th>Date</th><th>IP</th><th>Frontend</th><th>Current connections</th><th>Total connections</th></tr>
+<tr class="low"><td>2025-09-17 14:35:32</td><td><img src="https://flagcdn.com/16x12/ru.png" alt="ru" title="RU"> 31.134.188.185</td><td>vpn.m2.ru</td><td>0</td><td>2</td></tr>
+</table>
+
+<h2>Blocked connection attempts</h2>
+<table id="blocked">
+<tr><th>Date</th><th>IP</th><th>Frontend</th><th>Current connections</th><th>Total connections</th></tr>
+<tr class="blocked"><td>2025-09-17 14:35:32</td><td><img src="https://flagcdn.com/16x12/nl.png" alt="nl" title="NL"> 212.111.80.96</td><td>vpn.m2.ru</td><td>0</td><td>5</td></tr>
+</table>
+</body>
+</html>
